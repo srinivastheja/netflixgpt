@@ -34,7 +34,7 @@ const Login = () => {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          Navigate("/browse"); // Should be navigate instead of Navigate
+
           updateProfile(user, {
             displayName: name.current.value,
             photoURL:
