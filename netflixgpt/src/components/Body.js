@@ -1,10 +1,7 @@
-import React from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Browse from "./Browse";
 import Login from "./Login";
-//firebase
-//hook
-//store
+import { RouterProvider } from "react-router-dom";
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -24,5 +21,4 @@ const Body = () => {
     </div>
   );
 };
-
 export default Body;

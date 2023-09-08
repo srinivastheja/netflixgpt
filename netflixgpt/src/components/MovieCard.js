@@ -1,6 +1,15 @@
 import React from "react";
 import { IMG_CDN_URL } from "../utils/constants";
+
 const MovieCard = ({ posterPath }) => {
+  if (!posterPath) {
+    return (
+      <div className='text-white'>
+        <p>No Image Found</p>
+      </div>
+    );
+  }
+
   return (
     <div>
       <img
